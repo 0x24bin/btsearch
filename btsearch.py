@@ -5,9 +5,7 @@
 import threading
 import requests
 import sqlite3
-import urllib
 import Queue
-import math
 import json
 import sys
 import re
@@ -15,10 +13,10 @@ import re
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-# Console colors
-W  = '\033[0m'  # white (normal)
-R  = '\033[31m' # red
-G  = '\033[32m' # green
+
+W = '\033[0m'  # white (normal)
+R = '\033[31m'  # red
+G = '\033[32m'  # green
 
 
 def bThread(urllist):
